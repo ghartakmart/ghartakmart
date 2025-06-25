@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghar Tak Mart - Home Delivery </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .scrolling-banner { animation: scrollLeft 15s linear infinite; }
+    @keyframes scrollLeft {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-[#f7f7f7] text-[#2D3436]">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-4 py-3 sticky top-0 z-50">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="gtmlogo.jpg" alt="Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-extrabold text-[#00b34f]">Ghar Tak Mart</h1>
+      </div>
+      <button id="menuToggle" class="sm:hidden text-[#00b34f]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <ul id="menuList" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm mt-3 sm:mt-0">
+      <li><a href="index.html" class="block py-1 hover:underline">Home</a></li>
+      <li><a href="about.html" class="block py-1 hover:underline">About Us</a></li>
+      <li><a href="services.html" class="block py-1 hover:underline">Services</a></li>
+      <li><a href="products.html" class="block py-1 hover:underline">Products</a></li>
+      <li><a href="feedback.html" class="block py-1 hover:underline">Feedback</a></li>
+      <li>
+        
+        <a href="products.html">
+          <button class="bg-[#ff9100] text-white px-4 py-2 mt-2 sm:mt-0 rounded-md font-semibold hover:bg-orange-600 transition">
+          Order Now
+        </button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+919263251792" class="floating-whatsapp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-12 h-12" />
+  </a>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Ration Items - Ghar Tak Mart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-orange-100 text-gray-800">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Product Card -->
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="126906_10-aashirvaad-atta-whole-wheat.webp" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Shudh Chakki Atta 1kg</h3>
+        <p class="text-green-700 font-bold">₹55</p>
+        <a href="https://wa.me/9263251792?text=Hi, I want to order Atta 5kg from Ghar Tak Mart" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="rice.jpg" alt="Rice" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Rice 10kg</h3>
+        <p class="text-green-700 font-bold">₹600</p>
+        <a href="https://wa.me/9263251792?text=Hi, I want to order Rice 10kg from Ghar Tak Mart" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="mangaaltel.webp" alt="Oil" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Oil 1L</h3>
+        <p class="text-green-700 font-bold">₹170</p>
+        <a href="https://wa.me/9263251792?text=Hi, I want to order Oil 1L from Ghar Tak Mart" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="toordaalll.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Toor Dal 1kg</h4>
+        <p class="text-[#00b34f] font-bold">₹95</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="masala12combo.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">All Combo masala <br>Net Weight 50-gm each</h4>
+        <p class="text-[#00b34f] font-bold">Total ₹280</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="fast food masala.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Fast Food Masala <br>Net Weight 50-gm each</h4>
+        <p class="text-[#00b34f] font-bold">Total ₹190</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="non-veg masala.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Non-Veg-Masala <br>Net Weight 50-gm each</h4>
+        <p class="text-[#00b34f] font-bold">Total ₹160</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="sukkha mirchi.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Sukha mirchi <br>Net Weight 50-gm </h4>
+        <p class="text-[#00b34f] font-bold">Total ₹20</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+      
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="namak.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm"> Tata Salt <br>Net Weight 500-gm </h4>
+        <p class="text-[#00b34f] font-bold">Total ₹30</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="khadamasala.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Khada Gram masala <br>Net Weight 50-gm </h4>
+        <p class="text-[#00b34f] font-bold">Total ₹30</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="maida.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Maida kg </h4>
+        <p class="text-[#00b34f] font-bold">₹34.5</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="mungfali.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Mungafali  500gm</h4>
+        <p class="text-[#00b34f] font-bold">₹57</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="methi.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Methi<br>Net Weight 100-gm </h4>
+        <p class="text-[#00b34f] font-bold">₹15</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="kala chana.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Kala chana 500gm </h4>
+        <p class="text-[#00b34f] font-bold">Total ₹55</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="munga .jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Munga 500gm</h4>
+        <p class="text-[#00b34f] font-bold">₹48</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="munga .jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Munga 500gm</h4>
+        <p class="text-[#00b34f] font-bold">₹48</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="bread.jpeg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Bread small-packet</h4>
+        <p class="text-[#00b34f] font-bold">₹23</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="sujji.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Sujji 500gm</h4>
+        <p class="text-[#00b34f] font-bold">₹25</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="chai11.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Chaipatti 25gm</h4>
+        <p class="text-[#00b34f] font-bold">₹12</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="soya.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Soyabean 50gm</h4>
+        <p class="text-[#00b34f] font-bold">₹12</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="coffe.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Nescafe Coffee 50gm</h4>
+        <p class="text-[#00b34f] font-bold">₹248.5</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="refined .jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Fortune 1L</h4>
+        <p class="text-[#00b34f] font-bold">₹215</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="amulmik.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Amul Milk Powder 100gm</h4>
+        <p class="text-[#00b34f] font-bold">₹63.50</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="besan.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Chana Besan 1Kg</h4>
+        <p class="text-[#00b34f] font-bold">₹150</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="papad.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Chana Besan Papad 1 packet</h4>
+        <p class="text-[#00b34f] font-bold">₹35</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="masurdal.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Masur Dal 1Kg</h4>
+        <p class="text-[#00b34f] font-bold">₹90</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="lahardal.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Lahar Dal 1Kg</h4>
+        <p class="text-[#00b34f] font-bold">₹120</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="mungdallll.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Munga Dal 1Kg</h4>
+        <p class="text-[#00b34f] font-bold">₹120</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="chanadallll.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Chana Dal 1Kg</h4>
+        <p class="text-[#00b34f] font-bold">₹90</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded-xl shadow hover:shadow-lg text-center">
+        <img src="andm.jpg" alt="Toor Dal" class="w-32 h-32 mx-auto mb-2 object-contain" />
+        <h4 class="font-semibold text-sm">Ajwain and Mangreilla <br> 50gm each</h4>
+        <p class="text-[#00b34f] font-bold">₹51.75</p>
+        <a href="https://wa.me/+919263251792">
+          <button class="mt-2 w-full bg-[#00b34f] text-white py-1 rounded-md text-sm hover:bg-green-700">
+            Order on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="maggi.webp" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Maggi 6-pieces </h3>
+        <p class="text-green-700 font-bold">₹97.6</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="pasta.jpeg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Pasta 250gm </h3>
+        <p class="text-green-700 font-bold">₹22</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      
+
+
+
+  </div>    
+  
+
+<script>
+     // Toggle Menu on Mobile
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const menu = document.getElementById("menuList");
+      menu.classList.toggle("hidden");
+    });
+</script>
+  </body>
+  </html>

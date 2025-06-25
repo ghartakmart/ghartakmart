@@ -1,0 +1,136 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Ghar Tak Mart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .scrolling-banner { animation: scrollLeft 15s linear infinite; }
+    @keyframes scrollLeft {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+ <!-- Navbar -->
+  <nav class="bg-white shadow-md px-4 py-3 sticky top-0 z-50">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="gtmlogo.jpg" alt="Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-extrabold text-[#00b34f]">Ghar Tak Mart</h1>
+      </div>
+      <button id="menuToggle" class="sm:hidden text-[#00b34f]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <ul id="menuList" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm mt-3 sm:mt-0">
+      <li><a href="index.html" class="block py-1 hover:underline">Home</a></li>
+      <li><a href="about.html" class="block py-1 hover:underline">About Us</a></li>
+      <li><a href="services.html" class="block py-1 hover:underline">Services</a></li>
+      <li><a href="products.html" class="block py-1 hover:underline">Products</a></li>
+      <li><a href="feedback.html" class="block py-1 hover:underline">Feedback</a></li>
+      <li>
+        
+        <a href="products.html">
+          <button class="bg-[#ff9100] text-white px-4 py-2 mt-2 sm:mt-0 rounded-md font-semibold hover:bg-orange-600 transition">
+          Order Now
+        </button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  </header>
+
+    <!-- Header -->
+  <header class="text-center py-16 px-6 bg-gradient-to-r from-green-100 to-green-50">
+    <h1 class="text-5xl font-extrabold text-[#00b34f] mb-4">Our Trusted Services</h1>
+    <p class="text-xl max-w-3xl mx-auto text-gray-700">We don’t just deliver products — we deliver reliability, convenience, and care. Your needs, your time, your trust — all at your doorstep. 🏡</p>
+  </header>
+
+  <!-- Service Highlights -->
+  <section class="max-w-7xl mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-green-500 reveal">
+      <h3 class="text-2xl font-bold text-[#00b34f] mb-2">🚀 Lightning-Fast Delivery</h3>
+      <p>We value your time. That’s why our team ensures your essentials reach you within minutes, not hours.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-yellow-500 reveal">
+      <h3 class="text-2xl font-bold text-yellow-500 mb-2">🌱 Farm-Fresh Groceries</h3>
+      <p>We pick every fruit, vegetable, and dairy item with care. Fresh, local, and healthy — just like your family deserves.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-pink-500 reveal">
+      <h3 class="text-2xl font-bold text-pink-500 mb-2">💖 Human-first Service</h3>
+      <p>No bots. No confusion. Just real people who care — available on WhatsApp any time you need us.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-blue-500 reveal">
+      <h3 class="text-2xl font-bold text-blue-500 mb-2">📦 Full Range of Essentials</h3>
+      <p>Milk, ghee, bread, fruits, snacks, cleaning items — everything your home needs, under one WhatsApp chat.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-red-500 reveal">
+      <h3 class="text-2xl font-bold text-red-500 mb-2">🔐 Trusted by Families</h3>
+      <p>Over 5,000 homes trust us every day. Why? Because we don’t treat orders as numbers — we treat them as promises.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-indigo-500 reveal">
+      <h3 class="text-2xl font-bold text-indigo-500 mb-2">📲 WhatsApp Ordering</h3>
+      <p>No apps. No accounts. Just one message to <strong>+91 92632 51792</strong> and your delivery is on the way.</p>
+    </div>
+
+  </section>
+
+   <!-- WhatsApp Button -->
+  <a href="https://wa.me/+919263251792" class="floating-whatsapp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-12 h-12" />
+  </a>
+
+  <!-- CTA Section -->
+  <section class="bg-[#00b34f] text-white text-center py-16 px-6">
+    <h2 class="text-4xl font-extrabold mb-4">Your trust, our delivery.</h2>
+    <p class="text-xl mb-6">Switch to smarter grocery shopping today — local, fast, and fully reliable.</p>
+    <a href="https://wa.me/919263251792" target="_blank" class="bg-white text-[#00b34f] font-semibold px-8 py-3 rounded-full text-lg shadow hover:scale-105 transition">
+      💬 Order on WhatsApp Now
+    </a>
+  </section>
+
+  <!-- Scroll animation script -->
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 50) {
+          reveals[i].classList.add("active");
+        }
+      }
+    });
+  </script>
+
+  
+  <script>
+   // Toggle Menu on Mobile
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const menu = document.getElementById("menuList");
+      menu.classList.toggle("hidden");
+    });
+    </script>
+</body>
+</html>
