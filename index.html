@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghar Tak Mart - Home Delivery </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .scrolling-banner { animation: scrollLeft 15s linear infinite; }
+    @keyframes scrollLeft {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-[#f7f7f7] text-[#2D3436]">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-4 py-3 sticky top-0 z-50">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="gtmlogo.jpg" alt="Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-extrabold text-[#00b34f]">Ghar Tak Mart</h1>
+      </div>
+      <button id="menuToggle" class="sm:hidden text-[#00b34f]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <ul id="menuList" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm mt-3 sm:mt-0">
+      <li><a href="index.html" class="block py-1 hover:underline">Home</a></li>
+      <li><a href="about.html" class="block py-1 hover:underline">About Us</a></li>
+      <li><a href="services.html" class="block py-1 hover:underline">Services</a></li>
+      <li><a href="products.html" class="block py-1 hover:underline">Products</a></li>
+      <li><a href="feedback.html" class="block py-1 hover:underline">Feedback</a></li>
+      <li>
+        
+        <a href="products.html">
+          <button class="bg-[#ff9100] text-white px-4 py-2 mt-2 sm:mt-0 rounded-md font-semibold hover:bg-orange-600 transition">
+          Order Now
+        </button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-[#00b34f] to-[#ff9100] text-white py-16 text-center overflow-hidden px-4">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 animate-pulse">Fresh Groceries at Your Door!</h2>
+    <p class="text-base sm:text-lg mb-6">✨ Exciting Offers. Seamless Delivery. Pure Hygiene. ✨</p>
+    <button class="bg-white text-[#00b34f] font-bold px-6 py-3 rounded-full hover:scale-105 transition">
+      <a href="products.html">
+        Start Shopping
+      </a>
+    </button>
+  </section>
+
+  <!-- Countdown -->
+<div class="bg-[#ffcc00] text-center py-2 font-bold text-[#2D3436]">
+  🕒 Offers End In: <span id="countdown" class="ml-1">--:--:--</span>
+</div>
+
+<script>
+// Set offer start date and calculate end date (7 days later)
+const offerStartDate = new Date(); // Use current date/time
+const offerEndDate = new Date(offerStartDate.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 days later
+
+function updateCountdown() {
+  const now = new Date();
+  const timeLeft = offerEndDate - now;
+
+  if (timeLeft <= 0) {
+    document.getElementById("countdown").textContent = "00:00:00";
+    clearInterval(timer);
+    return;
+  }
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+  const seconds = Math.floor((timeLeft / 1000) % 60);
+
+  document.getElementById("countdown").textContent =
+    `${days}d ${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+const timer = setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial call
+</script>
+
+
+  <!-- Scrolling Offer -->
+  <div class="bg-[#ffb400] overflow-hidden whitespace-nowrap py-2 text-sm font-semibold text-white">
+    <div class="scrolling-banner inline-block px-4">
+      🎁 Free Delivery on First 3 Orders • ₹50 OFF on ₹499+ • Refer Friends & Get ₹10 OFF • Delivery in 30-45 minutes  🚚
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <section class="px-4 py-6">
+    <h3 class="text-xl sm:text-2xl font-bold mb-4">Explore Categories</h3>
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+      <a href="fruits.html">
+        <div class="text-center">
+        <img src="fruits.jpg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Fruits</p>
+      </div>
+      </a>
+
+      <a href="vegetables.html">
+        <div class="text-center">
+        <img src="vegetables.jpg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Vegetables</p>
+      </div>
+      </a>
+      <a href="dairy.html">
+         <div class="text-center">
+        <img src="dairy products.jpg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Dairy</p>
+      </div>
+      </a>
+     
+      <a href="ration.html">
+        <div class="text-center">
+        <img src="WhatsApp Image 2025-06-22 at 15.54.36_4a8f3e2d.jpg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Ration</p>
+      </div>
+      </a>
+
+      <a href="water.html">
+        <div class="text-center">
+        <img src="colddrink.jpg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Water</p>
+      </div>
+      </a>
+
+      <a href="snacks.html">
+        <div class="text-center">
+        <img src="snax.jpg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Snacks</p>
+      </div>
+      </a>
+    
+
+        <a href="dryfruits.htm">
+        <div class="text-center">
+        <img src="dryfruits.jpeg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Dry-Fruits</p>
+      </div>
+      </a>
+
+        <a href="puja.html">
+        <div class="text-center">
+        <img src="pujapath.jpeg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Puja-Path Products</p>
+        </div>
+      </a>
+
+        <a href="bathroomproducts.html">
+        <div class="text-center">
+        <img src="ooooo.jpeg" class="rounded-full mx-auto mb-1 w-20 h-20 object-cover" />
+        <p class="text-sm font-medium">Bathroom Uses-Products</p>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Products -->
+  <section class="px-4 py-6 bg-white">
+  <h3 class="text-xl sm:text-2xl font-bold mb-4">Hot Selling Items 🔥</h3>
+  
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    
+    <!-- Product Card -->
+    <div class="bg-[#f8f8f8] p-4 rounded-xl shadow hover:shadow-lg flex flex-col items-center">
+      <img src="40206277_1-bb-royal-mini-mogra-basmati-rice.png" alt="Basmati Rice" class="w-full max-h-40 object-contain mb-2" />
+      <h4 class="font-semibold text-sm text-center">Basmati Rice 1kg</h4>
+      <p class="text-[#00b34f] font-bold mb-2">₹80</p>
+      <a href="https://wa.me/+919263251792" class="w-full">
+        <button class="w-full bg-[#00b34f] text-white py-2 rounded-md text-sm hover:bg-green-700">
+          Order on WhatsApp
+        </button>
+      </a>
+    </div>
+
+    <!-- Product Card -->
+    <div class="bg-[#f8f8f8] p-4 rounded-xl shadow hover:shadow-lg flex flex-col items-center">
+      <img src="sudha-shakti-standardized-milk-1-l-product-images-o590002117-p610819041-0-202501151101.webp" alt="Toned Milk" class="w-full max-h-40 object-contain mb-2" />
+      <h4 class="font-semibold text-sm text-center">Toned Milk 1L</h4>
+      <p class="text-[#00b34f] font-bold mb-2">₹70</p>
+      <a href="https://wa.me/+919263251792" class="w-full">
+        <button class="w-full bg-[#00b34f] text-white py-2 rounded-md text-sm hover:bg-green-700">
+          Order on WhatsApp
+        </button>
+      </a>
+    </div>
+
+    <!-- Product Card -->
+    <div class="bg-[#f8f8f8] p-4 rounded-xl shadow hover:shadow-lg flex flex-col items-center">
+      <img src="kela.webp" alt="Banana" class="w-full max-h-40 object-contain mb-2" />
+      <h4 class="font-semibold text-sm text-center">Banana (6 pcs)</h4>
+      <p class="text-[#00b34f] font-bold mb-2">₹40</p>
+      <a href="https://wa.me/+919263251792" class="w-full">
+        <button class="w-full bg-[#00b34f] text-white py-2 rounded-md text-sm hover:bg-green-700">
+          Order on WhatsApp
+        </button>
+      </a>
+    </div>
+
+    <!-- Product Card -->
+    <div class="bg-[#f8f8f8] p-4 rounded-xl shadow hover:shadow-lg flex flex-col items-center">
+      <img src="redbull.jpg" alt="Red Bull" class="w-full max-h-40 object-contain mb-2" />
+      <h4 class="font-semibold text-sm text-center">Red Bull 250ml</h4>
+      <p class="text-[#00b34f] font-bold mb-2">₹120</p>
+      <a href="https://wa.me/9263251792" target="_blank" class="w-full">
+        <button class="w-full bg-[#00b34f] text-white py-2 rounded-md text-sm hover:bg-green-700">
+          Order on WhatsApp
+        </button>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+919263251792" class="floating-whatsapp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-12 h-12" />
+  </a>
+
+  <!-- CTA Section -->
+  <section class="bg-[#00b34f] text-white text-center py-10 mt-6 px-4">
+    <h2 class="text-2xl font-bold mb-2">Unbeatable Prices, Fresh Groceries</h2>
+    <p class="mb-4 text-sm">Tap, Order, Relax — We Deliver in 60 Mins!</p>
+    <a href="https://wa.me/+919263251792"><button class="bg-white text-[#00b34f] px-6 py-2 font-semibold rounded hover:scale-105 transition">Place Your Order Now</button>
+      </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center text-sm py-6 mt-8 px-2">
+    <p>© 2025 Ghar Tak Mart • Delivery from 5 AM to 9 PM • Min Order ₹150 • Max Delivery Time: 30-45 minutes</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Countdown Timer
+  
+
+    // Toggle Menu on Mobile
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const menu = document.getElementById("menuList");
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

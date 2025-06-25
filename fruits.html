@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghar Tak Mart - Home Delivery </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .scrolling-banner { animation: scrollLeft 15s linear infinite; }
+    @keyframes scrollLeft {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-[#f7f7f7] text-[#2D3436]">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-4 py-3 sticky top-0 z-50">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="gtmlogo.jpg" alt="Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-extrabold text-[#00b34f]">Ghar Tak Mart</h1>
+      </div>
+      <button id="menuToggle" class="sm:hidden text-[#00b34f]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <ul id="menuList" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm mt-3 sm:mt-0">
+      <li><a href="index.html" class="block py-1 hover:underline">Home</a></li>
+      <li><a href="about.html" class="block py-1 hover:underline">About Us</a></li>
+      <li><a href="services.html" class="block py-1 hover:underline">Services</a></li>
+      <li><a href="products.html" class="block py-1 hover:underline">Products</a></li>
+      <li><a href="feedback.html" class="block py-1 hover:underline">Feedback</a></li>
+      <li>
+        
+        <a href="products.html">
+          <button class="bg-[#ff9100] text-white px-4 py-2 mt-2 sm:mt-0 rounded-md font-semibold hover:bg-orange-600 transition">
+          Order Now
+        </button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+919263251792" class="floating-whatsapp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-12 h-12" />
+  </a>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Product Card -->
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="apple.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Apple 1kg</h3>
+        <p class="text-green-700 font-bold">₹275</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="bannnnn.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Banana 1 dozen</h3>
+        <p class="text-green-700 font-bold">₹50</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="orange.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Orange 1kg</h3>
+        <p class="text-green-700 font-bold">₹60</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="mango.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Mango 5kg</h3>
+        <p class="text-green-700 font-bold">₹125</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="guava.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Guava 1kg</h3>
+        <p class="text-green-700 font-bold">₹90</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="straweberry.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">straweberry 150gm</h3>
+        <p class="text-green-700 font-bold">₹170</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="grapes.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Grapes 500gm</h3>
+        <p class="text-green-700 font-bold">₹92</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="pineapple.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">pineapple 1 piece</h3>
+        <p class="text-green-700 font-bold">₹92</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="kiwi.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Kiwi 3 piece</h3>
+        <p class="text-green-700 font-bold">₹115</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="pomegrant.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Anar 500gm</h3>
+        <p class="text-green-700 font-bold">₹104</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="coconut.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Coconut 1 piece</h3>
+        <p class="text-green-700 font-bold">₹58</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="cherry.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Cherry 200gm</h3>
+        <p class="text-green-700 font-bold">₹110</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="avocado.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Avocado 2 pieces</h3>
+        <p class="text-green-700 font-bold">₹150</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="papaya.avif" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Papaya 1 piece</h3>
+        <p class="text-green-700 font-bold">₹68</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+
+          <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="pear.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Pears 2 pieces</h3>
+        <p class="text-green-700 font-bold">₹115</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="aawla.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Aawla 100gm</h3>
+        <p class="text-green-700 font-bold">₹190</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="jamun.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Jamun 250gm</h3>
+        <p class="text-green-700 font-bold">₹25</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="sarifa.jpg" alt="Atta" class="w-32 h-32 mx-auto mb-2 object-contain">
+        <h3 class="text-lg font-semibold">Sharriffa 2-pieces</h3>
+        <p class="text-green-700 font-bold">₹70</p>
+        <a href="https://wa.me/9263251792" target="_blank"
+           class="block bg-green-600 text-white font-semibold text-center px-3 py-2 rounded hover:bg-green-700 mt-2">
+           Order on WhatsApp
+        </a>
+      </div>
+
+      
+
+      
+  </div>    
+
+
+  <script>
+     // Toggle Menu on Mobile
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const menu = document.getElementById("menuList");
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  </body>
+  </html>
