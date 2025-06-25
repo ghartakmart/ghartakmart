@@ -1,0 +1,219 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Ghar Tak Mart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+  
+    body { font-family: 'Inter', sans-serif; }
+    .scrolling-banner { animation: scrollLeft 15s linear infinite; }
+    @keyframes scrollLeft {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+  
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-4 py-3 sticky top-0 z-50">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="gtmlogo.jpg" alt="Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-extrabold text-[#00b34f]">Ghar Tak Mart</h1>
+      </div>
+      <button id="menuToggle" class="sm:hidden text-[#00b34f]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <ul id="menuList" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm mt-3 sm:mt-0">
+      <li><a href="index.html" class="block py-1 hover:underline">Home</a></li>
+      <li><a href="about.html" class="block py-1 hover:underline">About Us</a></li>
+      <li><a href="services.html" class="block py-1 hover:underline">Services</a></li>
+      <li><a href="products.html" class="block py-1 hover:underline">Products</a></li>
+      <li><a href="feedback.html" class="block py-1 hover:underline">Feedback</a></li>
+      <li>
+        
+          <a href="products.html">
+            <button class="bg-[#ff9100] text-white px-4 py-2 mt-2 sm:mt-0 rounded-md font-semibold hover:bg-orange-600 transition">
+              Order Now
+            </button>
+          </a>
+
+      </li>
+    </ul>
+  </nav>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Ghar Tak Mart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .video-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="relative overflow-x-hidden">
+
+  <!-- 🔥 VIDEO BANNER -->
+  <section class="relative h-[400px] flex items-center justify-center text-white text-center">
+    <video autoplay muted loop class="video-bg">
+      <source src="https://cdn.pixabay.com/vimeo/774171134/vegetables-141547.mp4?width=1280&hash=8c0f2e4c34a49e1c6b9cc7b7cda62e52b9c315b7" type="video/mp4">
+    </video>
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-2">Welcome to Ghar Tak Mart</h1>
+      <p class="text-lg sm:text-xl font-semibold">Where your daily needs meet doorstep convenience 🛒</p>
+    </div>
+  </section>
+
+  <!-- 💚 ABOUT BLOCKS -->
+  <section class="bg-gradient-to-br from-[#e0fce4] to-[#fff] py-12 px-6 sm:px-12 text-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-[#00b34f] mb-4 animate-pulse">Why Choose Ghar Tak Mart?</h2>
+      <p class="text-lg sm:text-xl font-medium mb-8">Because we blend speed, freshness, and heart ❤️ into every delivery.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-10">
+
+        <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#00b34f] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#00b34f] mb-2">⚡ Fast as a Blink</h3>
+          <p>Groceries, dairy, fruits – right at your door in minutes, not hours. 🚴</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#ff9100] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#ff9100] mb-2">🌿 Always Fresh, Always Local</h3>
+          <p>Handpicked items daily from trusted vendors to ensure 100% purity.</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#ff3e3e] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#ff3e3e] mb-2">💖 Heartfelt Service</h3>
+          <p>We deliver with care, just like your family would. We’re your neighborhood heroes.</p>
+        </div>
+
+         <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#ff3e3e] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#ff3e3e] mb-2">💖 Imagine</h3>
+          <p>      Picture this: It’s 7:00 AM. Your family is waking up. The milkman is late. The market is far. You’re already worrying.  
+      But not today — because today, Ghar Tak Mart is at your service.</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#00b34f] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#00b34f] mb-2">📦 All Your Needs in One Place</h3>
+          <p>From groceries to dairy, fruits to snacks – we’ve got it all, delivered with a smile.</p>
+
+      </div>
+
+     <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#00b34f] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#00b34f] mb-2">Ghar ka Sahara</h3>
+          <p>We’re not just a grocery service. We’re your *ghar ka sahara*. We are the bridge between comfort and chaos.</p>
+
+      </div> 
+
+      <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#00b34f] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#00b34f] mb-2">No Problem</h3>
+          <p> It’s 10:00 AM. You remember you forgot to buy curd and paneer.  
+      No problem. Just message us: *“1 dahi, 1 paneer.”*  
+      Done. Confirmed. Delivered.</p>
+
+      </div> 
+
+      <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#00b34f] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#00b34f] mb-2">Be peaceful</h3>
+          <p>  Your morning should be peaceful.  
+      Your mother shouldn't stress.  
+      Your child shouldn't wait.  
+      Your evening tea shouldn't lack sugar.  
+      And your daily life shouldn't feel like a struggle</p>
+
+      </div> 
+
+      <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#00b34f] hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-[#00b34f] mb-2">⚡ FFF</h3>
+          <p> 🛒 Fast.  
+      🌿 Fresh.  
+      ❤️ Full of care. </p>
+        </div>
+
+      
+
+     
+      
+      
+
+      <div class="mt-12">
+        <a href="products.html" class="inline-block bg-[#00b34f] text-white px-6 py-3 text-lg font-semibold rounded-full shadow-md hover:bg-green-700 transition">🚀 Explore Products</a>
+      </div>
+    </div>
+  </section>
+  <!-- 📞 CONTACT US -->
+  <section class="bg-white py-12 px-6 sm:px-12 text-gray-800">
+    <div class="max-w-4xl mx-auto text-center"> 
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-[#00b34f] mb-4">Get in Touch</h2>
+      <p class="text-lg sm:text-xl mb-6">Have questions or feedback? We’re just a message away! 📱</p
+        <a href="https://wa.me/+919263251792" class="inline-block bg-[#00b34f] text-white px-6 py-3 text-lg font-semibold rounded-full shadow-md hover:bg-green-700 transition">
+       <a href="https://wa.me/9263251792">Contact Us on WhatsApp</a> 
+      </a>
+
+      <!-- 📲 FOLLOW US SECTION -->
+<section class="bg-[#f9f9f9] py-12 px-6 sm:px-12 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-[#00b34f] mb-4">📢 Follow Us for Daily Updates</h2>
+    <p class="text-lg sm:text-xl text-gray-700 mb-6">Stay connected with Ghar Tak Mart on Instagram to never miss exciting offers, product launches, and seasonal freshness! 🌟</p>
+    
+    <a href="https://instagram.com/ghartakmart" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-6 py-3 text-lg font-semibold rounded-full shadow-lg hover:scale-105 transition">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new--v1.png" alt="Instagram" class="w-6 h-6">
+      Follow @GharTakMart
+    </a>
+  </div>
+</section>
+
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+919263251792" class="floating-whatsapp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-12 h-12" />
+  </a>
+
+</body>
+</html>
+
+
+
+    </div>
+  </header>
+
+ 
+  <script>
+   // Toggle Menu on Mobile
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const menu = document.getElementById("menuList");
+      menu.classList.toggle("hidden");
+    });
+    </script>
+</body>
+</html>
